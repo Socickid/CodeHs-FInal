@@ -1,0 +1,39 @@
+<head>
+    <title>Animal Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+      <center>
+        <div id = "header" class = "col-lg-4 col-sm-4 col-md-4 col-xs-12">
+          <h1 id = "SoundHeading">Sound identifying Animals</h1>
+          <h3 id = "SoundNote">Note : Each sounds will identify different dangerous animals that might be encountered out in the wild</h3>
+          <h3 id = "SoundNote2"> Note: The Background Noise is really just the Lion Roar</h3>
+        </div >
+        <div class = "col-lg-4 col-sm-4 col-md-4 col-xs-12">
+        <br>
+        <br>
+        <button onclick = "StartSound()" id = "startButton" class = "btn btn-danger">Identify</button>
+        <br>
+        <br>
+        <h1 id = "SoundOutput">I can Hear : </h1>
+        <br>
+        <h2 id = "AccuracyOutput">Accuracy : </h2>
+        <br>
+        <img id = "Animal1" height = "250" width = "250" src = "LionRoar.webp">
+        <img id = "Animal2" height = "250" width = "250" src = "BObcvat.webp">
+        <img id = "Animal3" height = "250" width = "250" src = "Leopard.webp">
+        <img id = "Animal4" height = "250" width = "250" src = "Cheetah.webp">
+        <img id = "Animal5" height = "250" width = "250" src = "Panther.webp">
+        <br>
+        <br>
+        <br>
+      </div>
+      </center>
+<script src="main.js"></script>
+  </body>
